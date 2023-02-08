@@ -43,11 +43,13 @@ let menuBurgas = [
   }
 ]
 
-let combos = document.getElementById("combos")
+function miPagina(menu) {
+  let cajaCarrito = document.getElementById("cajaCarrito")
+}
+
 function show() {
   for (let index = 0; index < menuBurgas.length; index++) {
     combos.innerHTML +=
-
       `<div class="col row justify-content-start d-flex mb-4">
           <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
             <div class="card-title pt-2 text-center text-primary"> ${menuBurgas[index].nombre} </div>
@@ -61,7 +63,7 @@ function show() {
             </div>
           </div>
         </div>`
-}
+  }
 }
 show()
 
@@ -83,4 +85,3 @@ function agregarAlCarrito(e) {
   }
 }
 console.log(carrito)
-
