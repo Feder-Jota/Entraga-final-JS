@@ -67,14 +67,6 @@ function show() {
 }
 show()
 
-let carrito = []
-let botones = document.getElementsByClassName("boton")
-for (const boton of botones) {
-  boton.addEventListener("click", agregarAlCarrito)
-}
-
-function agregarAlCarrito(e) {
-
   let ordenPedido = menuBurgas.find(pedido => pedido.id == e.target.id)
   let posicionBuscada = carrito.findIndex(pedido => pedido.id == ordenPedido.id)
   if (posicionBuscada != -1) {
