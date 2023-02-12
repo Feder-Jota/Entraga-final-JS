@@ -44,7 +44,14 @@ let menuBurgas = [
 ]
 
 function miPagina(menu) {
-  let cajaCarrito = document.getElementById("cajaCarrito")
+  function miPagina(menu) {
+  let body = document.getElementById("body")
+  let pillsTab = document.getElementById("pills-tab")
+  let pillsProfileTab = document.getElementById("pills-profile-tab")
+  let pillsProfileTab2 = document.getElementById("pills-profile-tab2")
+  let alertAdd = document.getElementById("alertAdd")
+  let alertRemove = document.getElementById("alertRemove")
+  let carrito
 }
 
 function show() {
